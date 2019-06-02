@@ -1,0 +1,63 @@
+/* pozbywamy się białych miejsc z boków strony dla wszystkich elementów na stronie*/
+body {
+    margin: 0 auto;
+}
+
+
+/**************************************************************
+            Nav Bar
+**************************************************************/
+.stick-nav {
+    background-color: brown;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+/* ustawiamy navbar tak, by usunąć styl listowania z ul i ustawiamy padding między elementami
+ by zrobić między nimi przerwy */
+.nav-elements {
+    display: flex;
+    list-style: none;
+    font-size: 1.5em;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
+}
+
+li {
+    padding: 30px;
+}
+
+.right-elem {
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+/* tworzymy "responsywność" - dla ekranu szerokości mniejszej niż 600 px zmieniamy wartości nav-bara */
+@media only screen and (max-width: 600px){
+    .nav-elements{
+        font-size: 1.1em;
+        padding: 0;
+    }
+}
+
+
+/* usuawmy dekoracje(podkreslenie), centrujemy tekst */
+a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* klasa stick z pliku js - fixed position z top 0 trzyma nasz navbar u góry strony przy scrollowaniu. Width jest konieczny, żeby nasz navbar się nie zmniejszał */
+.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+h1{
+    padding: 16px;
+}
