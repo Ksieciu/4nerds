@@ -1,0 +1,13 @@
+.tekst-kontakt{
+    font-size: 1.5em;
+    margin: 10px 1em 10px 4em;
+    text-align: left;
+}
+
+#formularz{
+    margin: 10px 1.5em 10px 16em;
+}
+
+#formularz label{
+    padding-bottom: 5px;
+}
