@@ -42,6 +42,33 @@ class DB_COMMUNICATION{
             $results->execute();
         }
     }
+
+    public function show_shops(){
+        $pdo = $this->pdo;
+        $post_city = filter_input(INPUT_POST, 'city');
+
+        if(!empty($post_city)){
+            $query = $pdo->prepare('SELECT * FROM sklepy WHERE city=:city ORDER BY name');
+            $query->bindParam(':city', $post_city);
+            $query->execute();
+            $results = $query->fetchAll();
+
+            foreach($results as $row){
+                echo '<h2>' . $row['name'] . ' - ulica ' . $row['street'];
+                echo ', ' . $row['postcode'] . ', ' . $row['city'] . '</h2>'; 
+            }
+        } else {
+            $query = $pdo->prepare('SELECT * FROM sklepy ORDER BY name');
+            $query->execute();
+            $results = $query->fetchAll();
+
+            foreach($results as $row){
+                echo '<h2>' . $row['name'] . ' - ulica ' . $row['street'];
+                echo ', ' . $row['postcode'] . ', ' . $row['city'] . '</h2>'; 
+            }
+        }
+    }
+
     
 }
 
