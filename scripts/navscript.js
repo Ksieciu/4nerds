@@ -18,3 +18,4 @@ function sticking(){
 function height(){
     return navbar.offsetHeight;
 };
+

@@ -1,6 +1,7 @@
 /* pozbywamy się białych miejsc z boków strony dla wszystkich elementów na stronie*/
 body {
     margin: 0 auto;
+    
 }
 
 
@@ -10,17 +11,22 @@ body {
 .stick-nav {
     background-color: #ffff01; /*Zmieniam kolor navbara aby nawiazywał do loga, mozemy potem zmienic na czerwony - Piotr Wróblewski*/
     color: white;
-    border-radius: 4px;
+    border-radius: 1px;
     border: 1px solid black;
+    
 }
+a:hover{  /*Zmieniam kolor backgrounda po najechaniu myszka na alement linkowy - głównie do zastosowania w navbar'ze*/
+    background-color:#fe0002;
+    padding: 20px;
 
+}
 
 /* ustawiamy navbar tak, by usunąć styl listowania z ul i ustawiamy padding między elementami
  by zrobić między nimi przerwy */
 .nav-elements {
     display: flex;
     list-style: none;
-    font-size: 3.5em;
+    font-size: 2em;
     padding-left: 40px;
     padding-right: 40px;
     margin: 0;
@@ -40,7 +46,7 @@ body {
 }
 
 li {
-    padding: 30px;
+    padding: 20px;
 }
 
 .right-elem {
@@ -82,4 +88,56 @@ h1{
     margin-right: auto; 
     width: 40%;
     height: auto;
+
+
+}
+
+footer{
+    background-color:#fe0002;
+    padding: 16px;
+    font-size: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
+    font-family: 'badaboom_bbregular';
+    color: white;
+    border-radius: 1px;
+    border: 1px solid black;
+
+}
+p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 70%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#text_bg {
+    background-image: url(../images/bg.png);
+    background-size: 20%;
+    background-repeat: repeat;
+    
+    
+}
+
+header{
+    background-color:#fe0002;
+    padding: 16px;
+    font-size: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
+    font-family: 'badaboom_bbregular';
+    color: white;
+    border-radius: 1px;
+    border: 1px solid black;
+}
+#logo-area{
+    background-image: url(../images/bg.jpg);
+    background-size: 20%;
+    background-repeat: repeat;
 }

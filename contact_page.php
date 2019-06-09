@@ -20,30 +20,30 @@
     <title>4Nerd.pl - The place where you can be yourself</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
-<body>
+<header>Zadzwon do nas: 794 506 899 albo napisz <a href="mailto:kontakt@4nerds.pl">kontakt@4nerds.pl</a></header>
     <!-- robimy navbar i dodajemy w style placeholder by zawartość strony nie zmieniala swojej kompozycji - trzeba będzie to jeszcze dostosować, ale działa nieźle -->
-    <img src="images/4nerdsbig.jpg" alt="4Nerds.pl" id="banner-logo"><br>
+    <div id="logo-area"> <img src="images/logobig.png" alt="4Nerds.pl" id="banner-logo"></div>
     <div class="nav-place" style="height:height()">
         <nav class="stick-nav">
             <ul class="nav-elements">
-                <li><a href="">Home</a></li>
-                <li><a href="">Test1</a></li>
-                <li><a href="">Test2</a></li>
-                <li><a href="">Test3</a></li>
-                <li class="right-elem"><a href="">test4</a></li>
+                <li><a href="main_page.html">Home</a></li>
+                <li><a href="">O Firmie</a></li>
+                <li><a href="">Galeria</a></li>
+                <li><a href="">Produkty</a></li>
+                <li class="right-elem"><a href="">Kontakt</a></li>
             </ul>
         </nav>
     </div> 
     <div class="tekst-kontakt">
         <p> Siedziba naszej firmy znajduje się w Józebolestanisłarakowie przy ulicy Pilota Telewizyjnego Karola Plusa 4/20.</p>
         <p>Wypełnij formularz kontaktowy, a my w ciągu 24 godzin odpowiemy!</p><br><br>
-    </div>
+    
     
 
     
     <form id="formularz" method="POST">
-        <h1>Formularz kontaktowy</h1>
-        <h2>Podaj dane kontaktowe:</h2>
+        
+        <h2>Podaj dane kontaktowe:</h1>
         <label>
             Imie:
             <input type="text" id="name" name="name">
@@ -63,8 +63,10 @@
         <input type="submit" id="submit" value="Wyslij">
         
 
-    </form><br>
-
+    </form></div><br>
+    <footer>
+    © 2019 by WW Dev - Sebastian Winiarski & Piotr Wroblewski  
+   </footer>
     <script src="scripts/navscript.js" async></script>
     <script src="scripts/contact_script.js" async></script>
 </body>

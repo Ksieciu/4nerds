@@ -1,7 +1,10 @@
 
 
 body {
-        background-color: white;
+  background-image: url(../images/bg.jpg);
+/*  background-image: url(../images/bg.png);*/
+  background-size: 20%;
+  background-repeat: repeat;
 }
 
 #Landing-logo {
