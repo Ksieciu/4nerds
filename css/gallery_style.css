@@ -1,0 +1,20 @@
+
+.gallery-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.img-container img{
+    max-height: 240px;
+    width: auto;
+}
+
+.img-container{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+

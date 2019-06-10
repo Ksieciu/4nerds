@@ -26,6 +26,7 @@ class DB_COMMUNICATION{
         }
     }
 
+    //funkcja dodająca do bazy danych informacje z formularza kontaktowego podanego przez użytkownika
     public function contact_info_add(){
         $pdo = $this->pdo;
         $post_name = filter_input(INPUT_POST, 'name');
@@ -43,6 +44,7 @@ class DB_COMMUNICATION{
         }
     }
 
+    //funkcja pokazująca sklepy i ich adresy w mieście podanym przez użytkownika. W przypadku nie podania miasta wyświeltone zostaną wszystkie sklepy.
     public function show_shops(){
         $pdo = $this->pdo;
         $post_city = filter_input(INPUT_POST, 'city');
@@ -69,7 +71,62 @@ class DB_COMMUNICATION{
         }
     }
 
-    
+    //funkcja wyświetlająca galerię pobierająca linki do obrazów z bazy danych
+    public function show_images(){
+        //zapisujemy ile jest wszystkich obrazów w bazie danych i obliczamy ile stron potrzeba na ich wyświetlenie
+        $pdo = $this->pdo;
+        $query = $pdo->prepare('SELECT * FROM galeria');
+        $query->execute();
+        $totalItems = count($query->fetchAll());
+        $maxItems = 9;
+        $pages = ceil($totalItems / $maxItems);
+
+        //sprawdzamy aktualnie wyświetlaną stronę
+        if(isset($_GET['currentpage']) && is_numeric($_GET['currentpage'])){
+            $currentpage = (int)$_GET['currentpage'];
+        } else {
+            $currentpage = 1;
+        }
+
+        //sprawdzamy czy nie został wprowadzony currentpage wyższy od maksymalnej ilości page
+        if($currentpage > $pages){
+            $currentpage = $pages;
+        }
+
+        if($currentpage < 1){
+            $currentpage = 1;
+        }
+
+        $offset = ($currentpage - 1) * 3;
+        $limit= 9;
+
+        //wczytujemy po 9 obrazów z bazy danych
+        $query = $pdo->prepare('SELECT * FROM galeria LIMIT :first, :limit');
+        $query->bindParam(':first', $offset, PDO::PARAM_INT);
+        $query->bindParam(':limit', $limit, PDO::PARAM_INT);
+        $query->execute();
+        $results = $query->fetchAll();
+
+        //wyświetlamy strzalkę do poprzedniej strony, jeżeli jesteśmy na innej stronie niż pierwsza
+        if($currentpage > 1){
+            $prev = $currentpage - 1;
+            echo '<a href="?currentpage='.$prev.'"><img src="images/arrow-left.svg"></a>';
+        }
+
+        //tworzymy diva na obrazy i wyświetlamy je
+        echo '<div class="img-container">';
+        foreach($results as $row){
+            echo '<img src="'.$row['link'].'" alt="'.$row['name'].'"/>';
+        }
+        echo '</div>';
+
+        //a tu strzałka do kolejnej strony, jezeli strona nie jest stroną ostatnią
+        if($currentpage != $pages){
+            $next = $currentpage + 1;
+            echo '<a href="?currentpage='.$next.'"><img src="images/arrow-right.svg"></a>';
+        }
+    }
+
 }
 
 
