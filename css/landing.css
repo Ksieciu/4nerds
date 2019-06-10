@@ -1,17 +1,22 @@
 
 
-body {
-  background-image: url(../images/bg.jpg);
+#body_background {
+  background-image: url(../images/bg2.jpg);
 /*  background-image: url(../images/bg.png);*/
-  background-size: 20%;
-  background-repeat: repeat;
+  background-size: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto; 
+ 
 }
 
 #Landing-logo {
         display: block;
         margin-left: auto;
         margin-right: auto; 
-        width: 50%;
+        width: 90%;
         height: auto;
         -webkit-animation: fade-in-bck 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
 	        animation: fade-in-bck 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
