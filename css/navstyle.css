@@ -30,7 +30,7 @@ a:hover{  /*Zmieniam kolor backgrounda po najechaniu myszka na alement linkowy -
     padding-left: 40px;
     padding-right: 40px;
     margin: 0;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
     font-family: 'badaboom_bbregular';
     
 }
@@ -93,17 +93,18 @@ h1{
 }
 
 footer{
-    background-color:#fe0002;
+    background-color:#ff0000;
     padding: 16px;
     font-size: 1em;
     padding-left: 40px;
     padding-right: 40px;
     margin: 0;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
     font-family: 'badaboom_bbregular';
     color: white;
     border-radius: 1px;
     border: 1px solid black;
+    opacity: 0.9;
 
 }
 p {
@@ -147,13 +148,14 @@ h1 {
 }
 
 header{
-    background-color:#fe0002;
+    background-color:#ff0000;
+    opacity: 0.9;
     padding: 16px;
     font-size: 1em;
     padding-left: 40px;
     padding-right: 40px;
     margin: 0;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
     font-family: 'badaboom_bbregular';
     color: white;
     border-radius: 1px;
