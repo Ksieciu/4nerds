@@ -110,15 +110,38 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto; 
+    width: 90%;
+    padding:20px 10px 10px 20px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
     width: 70%;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+#text_box{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 60%;
+    height: auto;
+    background: white;
+    border-style: groove;
     
+   
 }
 #text_bg {
     background-image: url(../images/bg.png);
     background-size: 20%;
     background-repeat: repeat;
+    background-attachment: fixed;
     
     
 }
