@@ -2,9 +2,15 @@
     font-size: 1.5em;
     margin: 10px 1em 10px 4em;
     text-align: left;
+}
+
+#text_bg {
     background-image: url(../images/bg.png);
     background-size: 20%;
     background-repeat: repeat;
+    background-attachment: fixed;
+    
+    
 }
 
 #formularz{
@@ -17,18 +23,30 @@
     display: block;
     margin-left: auto;
     margin-right: auto; 
-
+    width: 50%;
+    
 }
-h1{
-    padding-bottom: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    width: 70%;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
 
-}
+    p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        width: 90%;
+        padding:20px 10px 10px 20px;
+        height: auto;
+        font-family: Arial, Helvetica, sans-serif;   
+    }
+    h1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        width: 90%;
+        padding:20px 10px 10px 20px;
+        height: auto;
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 1.2em; }
+
+
 #formularz label{
     padding-bottom: 5px;
     display: block;
@@ -37,17 +55,19 @@ h1{
     width: 70%;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px
 }
 
 
 header{
-    background-color:#fe0002;
+    background-color:#ff0000;
+    opacity: 0.9;
     padding: 16px;
-    font-size: 1em;
+    font-size: 1.2em;
     padding-left: 40px;
     padding-right: 40px;
     margin: 0;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
     font-family: 'badaboom_bbregular';
     color: white;
     border-radius: 1px;
@@ -55,29 +75,60 @@ header{
 }
 
 footer{
-    background-color:#fe0002;
+    background-color:#ff0000;
     padding: 16px;
     font-size: 1em;
     padding-left: 40px;
     padding-right: 40px;
     margin: 0;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
     font-family: 'badaboom_bbregular';
     color: white;
     border-radius: 1px;
     border: 1px solid black;
+    opacity: 0.9;
 
 }
-p {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    width: 70%;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 #logo-area{
     background-image: url(../images/bg.jpg);
     background-size: 20%;
     background-repeat: repeat;
 }
+
+#text_box{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 60%;
+    height: auto;
+    background: white;
+    border-style: groove;   
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+  }
+#text {
+    width: 100%;
+    
+    box-sizing: border-box;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+  }
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #ff0000;
+    border: 1px solid black;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'badaboom_bbregular';
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  }

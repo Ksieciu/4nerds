@@ -33,37 +33,41 @@
                 <li class="right-elem"><a href="">Kontakt</a></li>
             </ul>
         </nav>
-    </div> 
+    </div> <div id="text_bg">
+        <br>
+            <br>
     <div class="tekst-kontakt">
+        <div id="text_box">
+            
         <p> Siedziba naszej firmy znajduje się w Józebolestanisłarakowie przy ulicy Pilota Telewizyjnego Karola Plusa 4/20.</p>
-        <p>Wypełnij formularz kontaktowy, a my w ciągu 24 godzin odpowiemy!</p><br><br>
-    
-    
+        <p>Wypełnij formularz kontaktowy, a my w ciągu 24 godzin odpowiemy!</p><br><br></div>
+    <br>
+    <br>
 
     
     <form id="formularz" method="POST">
         
-        <h2>Podaj dane kontaktowe:</h1>
+        <h1>Podaj dane kontaktowe:</h1>
         <label>
-            Imie:
+           <h1> Imie:</h1>
             <input type="text" id="name" name="name">
         </label><br>
         <label>
-            Nazwisko:
+        <h1> Nazwisko:</h1>
             <input type="text" id="surname" name="surname">
         </label><br>
         <label>
-            Email:
+        <h1> Email:</h1>
             <input type="email" id="email" name="email">
         </label><br>
         <label>
-            Treść:
+        <h1> Tresc:</h1>
             <textarea type="text" id="text" name="text" col="40" rown="5"></textarea>
         </label><br><br>
         <input type="submit" id="submit" value="Wyslij">
         
 
-    </form></div><br>
+    </form></div></div><br>
     <footer>
     © 2019 by WW Dev - Sebastian Winiarski & Piotr Wroblewski  
    </footer>
