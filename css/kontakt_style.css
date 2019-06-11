@@ -17,7 +17,7 @@
     margin: 5px 1.5em 10px 10em;
     display: block;
     text-align: center;
-    background: #cce6fe;
+    background: #ffffff;
     border-style: groove;
     padding: 8px;
     display: block;
@@ -120,7 +120,7 @@ input[type=text] {
     padding: 12px 20px;
     box-sizing: border-box;
   }
-  input[type=button], input[type=submit], input[type=reset] {
+  input[type=button], input[type=submit], input[type=reset]{
     background-color: #ff0000;
     border: 1px solid black;
     color: white;
@@ -132,3 +132,51 @@ input[type=text] {
     font-family: 'badaboom_bbregular';
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
   }
+  .search_submit
+  {
+    background-color: #ff0000;
+    border: 1px solid black;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-top:2%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'badaboom_bbregular';
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #city
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 60%;
+    height: auto;
+    background: white;
+    border-style: groove; 
+
+  }
+  .search-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 30%;
+    padding:20px 10px 10px 20px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.2em; }
+  }
+  #banner-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 30%;
+    height: auto;
+
+
+}

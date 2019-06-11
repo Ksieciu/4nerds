@@ -50,24 +50,25 @@
         <h1>Podaj dane kontaktowe:</h1>
         <label>
            <h1> Imie:</h1>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required placeholder="Tutaj wpisz swoje imie">
         </label><br>
         <label>
         <h1> Nazwisko:</h1>
-            <input type="text" id="surname" name="surname">
+            <input type="text" id="surname" required placeholder="Tutaj wpisz swoje nazwisko" name="surname">
         </label><br>
         <label>
         <h1> Email:</h1>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email"  required placeholder="Tutaj wpisz swoje adres e-mail" name="email">
         </label><br>
         <label>
         <h1> Tresc:</h1>
-            <textarea type="text" id="text" name="text" col="40" rown="5"></textarea>
+            <textarea type="text" id="text" name="text"  required placeholder="Podaj treść" col="40" rown="5"></textarea>
         </label><br><br>
         <input type="submit" id="submit" value="Wyslij">
         
 
-    </form></div></div><br>
+    </form><br><br>
+<br></div></div>
     <footer>
     © 2019 by WW Dev - Sebastian Winiarski & Piotr Wroblewski  
    </footer>
