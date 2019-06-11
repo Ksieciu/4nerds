@@ -19,10 +19,10 @@
         <nav class="stick-nav">
             <ul class="nav-elements">
                 <li><a href="main_page.html">Home</a></li>
-                <li><a href="">O Firmie</a></li>
-                <li><a href="">Galeria</a></li>
-                <li><a href="">Produkty</a></li>
-                <li class="right-elem"><a href="">Kontakt</a></li>
+                <li><a href="o firmie.html">O Firmie</a></li>
+                <li><a href="gallery.php">Galeria</a></li>
+                <li><a href="produkty.html">Produkty</a></li>
+                <li class="right-elem"><a href="contact_page.php">Kontakt</a></li>
             </ul>
         </nav>
     </div>

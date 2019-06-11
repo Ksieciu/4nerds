@@ -117,3 +117,24 @@
 .close:hover {
     cursor: pointer;
 }
+.img-name
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 90%;
+    padding:20px 10px 10px 20px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.desc
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 90%;
+    padding:20px 10px 10px 20px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}

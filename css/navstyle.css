@@ -135,8 +135,7 @@ h1 {
     height: auto;
     background: white;
     border-style: groove;
-    
-   
+     
 }
 #text_bg {
     background-image: url(../images/bg.png);
@@ -165,4 +164,28 @@ header{
     background-image: url(../images/bg.jpg);
     background-size: 20%;
     background-repeat: repeat;
+}
+#nerd {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 30%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: auto;
+    float: right;
+
+}
+#wide-pics{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 50%;
+    height: auto;
+
+
+
 }
