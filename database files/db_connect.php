@@ -49,6 +49,7 @@ class DB_COMMUNICATION{
         $pdo = $this->pdo;
         $post_city = filter_input(INPUT_POST, 'city');
 
+        //sprawdzamy czy zostało wprowadzone miasto w wyszukiwaniu, jeżeli nie, to wyświetlamy wszystkie sklepy
         if(!empty($post_city)){
             $query = $pdo->prepare('SELECT * FROM sklepy WHERE city=:city ORDER BY name');
             $query->bindParam(':city', $post_city);
@@ -97,7 +98,7 @@ class DB_COMMUNICATION{
             $currentpage = 1;
         }
 
-        $offset = ($currentpage - 1) * 3;
+        $offset = ($currentpage - 1) * 9;
         $limit= 9;
 
         //wczytujemy po 9 obrazów z bazy danych
@@ -116,7 +117,10 @@ class DB_COMMUNICATION{
         //tworzymy diva na obrazy i wyświetlamy je
         echo '<div class="img-container">';
         foreach($results as $row){
-            echo '<img src="'.$row['link'].'" alt="'.$row['name'].'"/>';
+            echo '<div id="'.$row['ID'].'">';
+            echo '<img src="'.$row['link'].'" alt="'.$row['name'].'"  class="image-display"/>';
+            echo '<div class="hidden-desc">'.$row['description'].'</div>';
+            echo '</div>';
         }
         echo '</div>';
 

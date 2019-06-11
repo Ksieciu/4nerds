@@ -34,9 +34,19 @@
 
     </div>
 
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close"><img src="images/close.svg" alt="Close"></span>
+            <img class="modal-img">
+            <div class="img-name"></div>
+            <div class="desc"></div>
+        </div>
+    </div>
+
    <footer>
     © 2019 by WW Dev - Sebastian Winiarski & Piotr Wroblewski  
    </footer>
     <script src="scripts/navscript.js" async></script>
+    <script src="scripts/image_enlarge.js" async></script>
 </body>
 </html>

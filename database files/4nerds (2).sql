@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 10 Cze 2019, 17:32
+-- Czas generowania: 11 Cze 2019, 17:34
 -- Wersja serwera: 10.1.40-MariaDB
 -- Wersja PHP: 7.3.5
 
@@ -40,26 +40,27 @@ CREATE TABLE `galeria` (
 --
 
 INSERT INTO `galeria` (`name`, `description`, `link`, `ID`) VALUES
-('1', NULL, 'images/gallery/1.jpg', 1),
-('2', NULL, 'images/gallery/2.jpg', 2),
-('3', NULL, 'images/gallery/3.jpg', 3),
-('4', NULL, 'images/gallery/4.jpg', 4),
-('5', NULL, 'images/gallery/5.jpg', 5),
-('6', NULL, 'images/gallery/6.jpg', 6),
-('7', NULL, 'images/gallery/7.jpg', 7),
-('8', NULL, 'images/gallery/8.jpg', 8),
-('9', NULL, 'images/gallery/9.jpg', 9),
-('10', NULL, 'images/gallery/10.jpg', 10),
-('11', NULL, 'images/gallery/11.jpg', 11),
-('12', NULL, 'images/gallery/12.jpg', 12),
-('13', NULL, 'images/gallery/13.jpg', 13),
-('14', NULL, 'images/gallery/14.jpg', 14),
+('1', 'Proin turpis arcu, faucibus non lorem non, tincidunt fermentum magna. Donec ullamcorper lectus tristique tortor consectetur blandit. Praesent vehicula volutpat consectetur.', 'images/gallery/1.jpg', 1),
+('2', 'Curabitur non libero feugiat, imperdiet leo ac, semper leo. Phasellus eget ante mattis, rhoncus est in, mattis neque. Praesent vel mollis lacus. ', 'images/gallery/2.jpg', 2),
+('3', 'Aliquam at est tincidunt, lacinia lectus ac, feugiat enim. In semper dolor at metus maximus, eu volutpat velit luctus. Proin erat arcu, ullamcorper non nibh in, blandit accumsan nulla. ', 'images/gallery/3.jpg', 3),
+('4', 'Maecenas sed nisl tempus, aliquam odio eget, semper neque. ', 'images/gallery/4.jpg', 4),
+('5', 'Ut feugiat facilisis libero, sed tristique mauris vulputate at.', 'images/gallery/5.jpg', 5),
+('6', 'Morbi diam nulla, commodo nec hendrerit eu, ullamcorper a orci. Integer sodales tempor libero.', 'images/gallery/6.jpg', 6),
+('7', 'Mauris pretium, diam vel scelerisque gravida, arcu enim fermentum nisl, quis tempor purus metus a tortor. ', 'images/gallery/7.jpg', 7),
+('8', 'Maecenas eget sodales nibh.', 'images/gallery/8.jpg', 8),
+('9', 'Sed ac velit vitae ligula bibendum malesuada eu nec turpis. Phasellus vel commodo dolor, non sodales nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Quisque pharetra enim ut laoreet lacinia. Sed finibus, dui eget viverra imperdiet, massa leo ultricies nulla, id pretium neque diam sollicitudin justo. Ut id mauris ligula. Phasellus tempus elementum accumsan.', 'images/gallery/9.jpg', 9),
+('10', 'Ut id elementum nisi, in pharetra dui. Suspendisse in lectus vel justo pharetra finibus in a eros. Praesent sed tortor ac metus pretium maximus. Aenean congue ultricies tristique.', 'images/gallery/10.jpg', 10),
+('11', 'Vivamus arcu ligula, feugiat a purus eu, dictum viverra ex.', 'images/gallery/11.jpg', 11),
+('12', 'Nunc tortor lectus, posuere ac imperdiet id, congue pellentesque sapien. ', 'images/gallery/12.jpg', 12),
+('13', 'Nullam at ultricies leo. Interdum et malesuada fames ac ante ipsum primis in faucibus.', 'images/gallery/13.jpg', 13),
+('14', 'Suspendisse malesuada ante nec venenatis hendrerit. Proin et rutrum nisl, ut scelerisque lorem. ', 'images/gallery/14.jpg', 14),
 ('15', NULL, 'images/gallery/15.jpg', 15),
-('16', NULL, 'images/gallery/16.jpg', 16),
-('17', NULL, 'images/gallery/17.jpg', 17),
-('18', NULL, 'images/gallery/18.jpg', 18),
-('19', NULL, 'images/gallery/19.jpg', 19),
-('20', NULL, 'images/gallery/19.jpg', 20);
+('16', 'Phasellus tempus placerat mi vel faucibus. Suspendisse id odio et nibh placerat elementum id sed eros. ', 'images/gallery/16.jpg', 16),
+('17', 'Ut a mauris ac massa condimentum aliquam a quis ipsum.', 'images/gallery/17.jpg', 17),
+('18', 'Cogito ergo sum.', 'images/gallery/18.jpg', 18),
+('19', 'Suspendisse euismod magna vitae libero porta congue. ', 'images/gallery/19.jpg', 19),
+('20', 'Ut vehicula purus sit amet magna volutpat eleifend.', 'images/gallery/20.jpg', 20),
+('21', ' Vivamus vel congue nisi. ', 'images/gallery/21.jpg', 21);
 
 -- --------------------------------------------------------
 
@@ -161,7 +162,7 @@ ALTER TABLE `sklepy`
 -- AUTO_INCREMENT dla tabeli `galeria`
 --
 ALTER TABLE `galeria`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT dla tabeli `kontakt`
