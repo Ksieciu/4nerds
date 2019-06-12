@@ -6,8 +6,10 @@ let stick = navbar.offsetTop;
 
 
 function sticking(){
-    console.log("sitckuje!");
+    navbar.style.height = navbar.offsetHeight;
+    //console.log("sitckuje!");
     if(window.pageYOffset >= stick){
+        console.log("działam!");
         navbar.classList.add("stick");
     } else {
         navbar.classList.remove("stick");
@@ -16,6 +18,7 @@ function sticking(){
 
 
 function height(){
-    return navbar.offsetHeight;
+    console.log("działam!");
+    navbar.style.height = navbar.offsetHeight;
 };
 

@@ -15,6 +15,7 @@ body {
     border: 1px solid black;
     
 }
+
 a:hover{  /*Zmieniam kolor backgrounda po najechaniu myszka na alement linkowy - głównie do zastosowania w navbar'ze*/
     background-color:#fe0002;
     padding: 20px;
@@ -33,7 +34,13 @@ a:hover{  /*Zmieniam kolor backgrounda po najechaniu myszka na alement linkowy -
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black; /*Dodaje komiksowy border*/
     font-family: 'badaboom_bbregular';
     
+    
 }
+
+.nav-place {
+    height: 75px;
+}
+
 /*Konwertuje przez fontsqurell font wykorzystany do stworzenia loga*/
 @font-face {
     font-family: 'badaboom_bbregular';
@@ -55,12 +62,13 @@ li {
 }
 
 /* tworzymy "responsywność" - dla ekranu szerokości mniejszej niż 600 px zmieniamy wartości nav-bara */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 880px){
     .nav-elements{
-        font-size: 1.1em;
+        font-size: 1.2em;
         padding: 0;
     }
 }
+
 
 
 /* usuawmy dekoracje(podkreslenie), centrujemy tekst */
@@ -76,6 +84,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
+    
 }
 
 h1{
@@ -160,11 +169,13 @@ header{
     border-radius: 1px;
     border: 1px solid black;
 }
+
 #logo-area{
     background-image: url(../images/bg.jpg);
     background-size: 20%;
     background-repeat: repeat;
 }
+
 #nerd {
     display: block;
     margin-left: auto;
@@ -178,6 +189,7 @@ header{
     float: right;
 
 }
+
 #wide-pics{
 
     display: block;
@@ -185,7 +197,5 @@ header{
     margin-right: auto; 
     width: 50%;
     height: auto;
-
-
 
 }

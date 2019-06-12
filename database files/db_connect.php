@@ -131,6 +131,28 @@ class DB_COMMUNICATION{
         }
     }
 
+
+    public function show_text($text_name){
+        $pdo = $this->pdo;
+        
+        $query = $pdo->prepare('SELECT * FROM tekst WHERE name=:name');
+        $query->bindParam(':name', $text_name, PDO::PARAM_STR);
+        $query->execute();
+        $row = $query->fetch();
+
+        echo '<p>' . $row['text'] . '</p>';
+    }
+
+
+    public function show_link($link_name){
+        $pdo = $this->pdo;
+
+        $query = $pdo->prepare('SELECT * FROM linking WHERE name=:name');
+        $query->bindParam(':name', $link_name, PDO::PARAM_STR);
+        $query->execute();
+        $row = $query->fetch();
+        echo '<li '.(($row['class'] != NULL)?'class="'.$row['class'].'"':"").'><a href="'.$row['source'].'">'.$row['name'].'</a></li>';
+    }
 }
 
 

@@ -1,3 +1,8 @@
+<?php
+    include 'database files/db_connect.php'; 
+    $db_conn = new DB_COMMUNICATION();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +15,7 @@
 <body>
     <header>Zadzwon do nas: 794 506 899 albo napisz <a href="mailto:kontakt@4nerds.pl">kontakt@4nerds.pl</a></header>
     <!-- robimy navbar i dodajemy w style placeholder by zawartość strony nie zmieniala swojej kompozycji - trzeba będzie to jeszcze dostosować, ale działa nieźle -->
-   <div id="logo-area"> <img src="images/logobig.png" alt="4Nerds.pl" id="banner-logo"></div>
-    <div class="nav-place" style="height:height()">
-        <nav class="stick-nav">
-            <ul class="nav-elements">
-                <li><a href="main_page.html">Home</a></li>
-                <li><a href="o firmie.html">O Firmie</a></li>
-                <li><a href="gallery.php">Galeria</a></li>
-                <li><a href="produkty.html">Produkty</a></li>
-                <li class="right-elem"><a href="contact_page.php">Kontakt</a></li>
-            </ul>
-        </nav>
-    </div>
+    <?php include "navbarV2.php"; ?>
      <div id="text_bg">
          <br>
          <br>
@@ -32,7 +26,7 @@
                         <p>Drugim założycielem, współtwórcą idei 4nerds.pl jest Piotr Wróblewski. Wybitny mówca, menadżer, wizjoner, człowiek renesansu. Osoba o niesamowitej charyzmie oraz wewnętrznej werwie, ponoć potrafi wygrać dyskusje nie biorąc w jej udziału. Sylwetkowy dubler Chrisa Hemswortha w Avengers – Endgame.</p>
                         <p>Z połączenia dwóch tak tęgich umysłów, w roku 2017 powstała idea a następnie prężny start-up, który do dziś odnosi sukcesy na rynku lokalnym i międzynarodowym.</p>
     
-            <br></p></img></p> 
+            <br></p></p> 
             
             </div>
         </div></div>
