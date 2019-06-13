@@ -176,7 +176,7 @@ header{
     background-repeat: repeat;
 }
 
-#nerd {
+.nerd {
     display: block;
     margin-left: auto;
     margin-right: auto; 
@@ -190,7 +190,7 @@ header{
 
 }
 
-#wide-pics{
+.wide-pics{
 
     display: block;
     margin-left: auto;

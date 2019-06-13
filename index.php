@@ -1,3 +1,8 @@
+<?php
+    include 'database files/db_connect.php'; 
+    $db_conn = new DB_COMMUNICATION();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +14,9 @@
     
 </head>
 <body>
-    <div id="body_background">
- <img src="images/logo.jpg" alt="Logo-4Nerds.pl" id="Landing-logo"> </div>
+<div id="body_background">
+    <?php $db_conn->show_image("landing_logo"); ?>
+</div>
  <script src="scripts/landing.js" async></script>
  
     </body>

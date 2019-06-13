@@ -1,6 +1,6 @@
 <?php
 
-//klasa służąca połączeniom i operacjom na bazie danych
+//klasa służąca połączeniom i operacjom związanych z bazą danych
 class DB_COMMUNICATION{
 
     private $pdo;
@@ -17,7 +17,7 @@ class DB_COMMUNICATION{
             $db_name = $this->db_name;
             $db_user = $this->db_user;
             $db_pass = $this->db_pass;
-            $dsn = 'mysql:host=' . $db_host . ';dbname=' . $db_name;
+            $dsn = 'mysql:host=' . $db_host . ';dbname=' . $db_name . ";charset=utf8";
             $pdo = new PDO($dsn, $db_user, $db_pass);
             $this->pdo = $pdo; 
 
@@ -56,10 +56,15 @@ class DB_COMMUNICATION{
             $query->execute();
             $results = $query->fetchAll();
 
-            foreach($results as $row){
-                echo '<h2>' . $row['name'] . ' - ulica ' . $row['street'];
-                echo ', ' . $row['postcode'] . ', ' . $row['city'] . '</h2>'; 
+            if(!empty($results)){
+                foreach($results as $row){
+                    echo '<h2>' . $row['name'] . ' - ulica ' . $row['street'];
+                    echo ', ' . $row['postcode'] . ', ' . $row['city'] . '</h2>'; 
+                }
+            } else {
+                echo '<h2>Brak sklepów w podanej lokalizacji!</h2>';
             }
+            
         } else {
             $query = $pdo->prepare('SELECT * FROM sklepy ORDER BY name');
             $query->execute();
@@ -73,7 +78,7 @@ class DB_COMMUNICATION{
     }
 
     //funkcja wyświetlająca galerię pobierająca linki do obrazów z bazy danych
-    public function show_images(){
+    public function show_gallery_images(){
         //zapisujemy ile jest wszystkich obrazów w bazie danych i obliczamy ile stron potrzeba na ich wyświetlenie
         $pdo = $this->pdo;
         $query = $pdo->prepare('SELECT * FROM galeria');
@@ -131,7 +136,7 @@ class DB_COMMUNICATION{
         }
     }
 
-
+    //funkcja do wyświetlania tekstu
     public function show_text($text_name){
         $pdo = $this->pdo;
         
@@ -140,10 +145,10 @@ class DB_COMMUNICATION{
         $query->execute();
         $row = $query->fetch();
 
-        echo '<p>' . $row['text'] . '</p>';
+        echo $row['text'];
     }
 
-
+    //funkcja do wstawiania napisów z linkami z bazy danych
     public function show_link($link_name){
         $pdo = $this->pdo;
 
@@ -152,6 +157,17 @@ class DB_COMMUNICATION{
         $query->execute();
         $row = $query->fetch();
         echo '<li '.(($row['class'] != NULL)?'class="'.$row['class'].'"':"").'><a href="'.$row['source'].'">'.$row['name'].'</a></li>';
+    }
+
+    //funkcja do wyświetlania grafik i obrazów
+    public function show_image($img_name){
+        $pdo = $this->pdo;
+
+        $query = $pdo->prepare('SELECT * FROM graphics WHERE name=:name');
+        $query->bindParam(':name', $img_name, PDO::PARAM_STR);
+        $query->execute();
+        $row = $query->fetch();
+        echo '<img src="'.$row['source'].' " '.(($row['class'] != NULL)?' class="'.$row['class'].'"':"").' '.(($row['id'] != NULL)?' id="'.$row['id'].'"':"").' '.(($row['alt'] != NULL)?' alt="'.$row['alt'].'"':"").'>';
     }
 }
 

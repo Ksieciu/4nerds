@@ -9,16 +9,8 @@ function sticking(){
     navbar.style.height = navbar.offsetHeight;
     //console.log("sitckuje!");
     if(window.pageYOffset >= stick){
-        console.log("działam!");
         navbar.classList.add("stick");
     } else {
         navbar.classList.remove("stick");
     }
 };
-
-
-function height(){
-    console.log("działam!");
-    navbar.style.height = navbar.offsetHeight;
-};
-

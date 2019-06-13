@@ -9,40 +9,37 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/navstyle.css">
     <link rel="stylesheet" href="css/kontakt_style.css">
-    <title>4Nerd.pl - The place where you can be yourself</title>
+    <?php $db_conn->show_text("title_text"); ?>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
-<header>Zadzwon do nas: 794 506 899 albo napisz <a href="mailto:kontakt@4nerds.pl">kontakt@4nerds.pl</a></header>
-
+    <?php $db_conn->show_text("header"); ?>
     <?php include "navbarV2.php"; ?>
     
     <div id="text_bg">
     <br>
     <br>
          <div id="text_box">
-             <div class='search-back-img'>
-               <div class='search-box'>
-                 <div class='search-content'>
-                 <h3 class="search-text">Znajdź sklep w podanym mieście</h3>
+            <div class='search-back-img'>
+                <div class='search-box'>
+                    <div class='search-content'>
+                        <h3 class="search-text">Znajdź sklep w podanym mieście</h3>
 
-                <div class='search-container'>
-                    <form class='search-form' method='POST' action='search_results.php'>
-                        <input type="text" name="city" id="city" placeholder="Wpisz miasto">
-                        <!-- poniżej można dodać w button jakiś obrazek svg np. lupę -->
-                        <button class="search_submit" type="submit">Szukaj</button> 
-                    </form>
+                        <div class='search-container'>
+                        <form class='search-form' method='POST' action='search_results.php'>
+                            <input type="text" name="city" id="city" placeholder="Wpisz miasto">
+                            <!-- poniżej można dodać w button jakiś obrazek svg np. lupę -->
+                            <button class="search_submit" type="submit">Szukaj</button> 
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
     </div>
-    
-</div>
-<br>
-<br>
-<br>
-<br>
-</div>
 
     <footer>
     © 2019 by WW Dev - Sebastian Winiarski & Piotr Wroblewski  
