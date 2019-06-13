@@ -4,7 +4,6 @@
     $db_conn = new DB_COMMUNICATION();
 
     if($_POST && isset($_POST) && !empty($_POST)){
-        echo "udało się!";
         $db_conn->contact_info_add();
         header('Location: contact_page.php');
     };

@@ -4,9 +4,7 @@ let body = document.getElementsByTagName("body")[0];
 body.addEventListener("click", function(e) {
 
     const item = e.target;
-    console.log(item);
     const itemParentID = e.target.parentElement;
-    console.log(itemParentID);
 
     if(item.className == "image-display"){
         const modal = document.querySelector(".modal");
