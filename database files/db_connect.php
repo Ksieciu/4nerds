@@ -5,10 +5,10 @@ class DB_COMMUNICATION{
 
     private $pdo;
     public $dns;
-    private $db_host = 'localhost';
-    private $db_name = '4nerds';
-    private $db_user = 'root';
-    private $db_pass = '';
+    private $db_host = 'hosting1947235.online.pro';
+    private $db_name = '00231786_4nerds';
+    private $db_user = '00231786_4nerds';
+    private $db_pass = '6=cz68QvV9';
 
     //konstruktor przypisujący odpowiednie wartości do zmiennych obiektu potrzebnych do połączenia z bazą danych
     public function __construct(){
