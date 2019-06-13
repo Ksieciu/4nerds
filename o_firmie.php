@@ -25,9 +25,10 @@
                 ?>
             <br></p></p> 
         </div>
-    </div></div>
-    <br>
-   <br>
+		<BR><BR>
+    </div>
+  </div>
+    
     <footer>
     © 2019 by WW Dev - Sebastian Winiarski & Piotr Wroblewski  
    </footer>

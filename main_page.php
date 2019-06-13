@@ -23,8 +23,9 @@
             $db_conn->show_text("main_page_opis"); 
             ?>
         </div>
+		<br><br>
     </div>
-    <br><br>
+    
     <footer>
     © 2019 by WW Dev - Sebastian Winiarski & Piotr Wroblewski  
    </footer>
