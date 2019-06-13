@@ -20,10 +20,10 @@
         <br>
         <div id="text_box">
             <?php $db_conn->show_text("eventy_opis"); ?>
-        </div>
+        </div><br>
+    <br>
     </div>
-    <br>
-    <br>
+    
     <footer>
     © 2019 by WW Dev - Sebastian Winiarski & Piotr Wroblewski  
    </footer>

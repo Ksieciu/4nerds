@@ -21,10 +21,10 @@
             <?php $db_conn->show_text("ubrania_opis"); ?>
             <br></p></p> 
             
-        </div>
-    </div></div>
-    <br>
+        </div><br>
    <br>
+    </div></div>
+    
     <footer>
     © 2019 by WW Dev - Sebastian Winiarski & Piotr Wroblewski  
    </footer>
